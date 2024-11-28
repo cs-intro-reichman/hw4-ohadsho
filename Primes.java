@@ -9,23 +9,26 @@ public class Primes {
             prime[k] = true;
         }
 
-        while(i <n){
+        while(i <= n){
             while(i <= n && prime[i] == false){
                 i++;
             }
-            System.out.println(i);
+
             while(j<=n){
                 if(j%i == 0){
                     prime[j] = false;
                 }
                 j++;
             }
+            
             j=0;
             primeCounter++;
         }
         primeCounter--;
+
+
         
-        System.out.println("There are " + primeCounter+ " primes between 2 and " + n +" ("+ 100/(n/primeCounter) +"%" +" sare primes)");
+        System.out.println("There are " + primeCounter+ " primes between 2 and " + n +" ("+ (int)(100.0/((double)n/(double)primeCounter)) +"%" +" are primes)");
     }
 }
     
