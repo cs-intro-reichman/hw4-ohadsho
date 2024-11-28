@@ -1,6 +1,7 @@
 public class Primes {
     public static void main(String[] args) {
         int n = Integer.parseInt(args[0]);
+        System.out.println("Prime numbers up to "+ n+":");
         int i=0;
         int j=0;
         int primeCounter =0;
@@ -28,7 +29,7 @@ public class Primes {
 
 
         
-        System.out.println("There are " + primeCounter+ " primes between 2 and " + n +" ("+ (int)(100.0/((double)n/(double)primeCounter)) +"%" +" are primes"+ ") ");
+        System.out.println("There are " + primeCounter+ " primes between 2 and " + n +" ("+ (int)(100.0/((double)n/(double)primeCounter)) +"%" +" are primes"+ ")");
     }
 }
     
