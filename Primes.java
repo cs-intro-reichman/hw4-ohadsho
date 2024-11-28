@@ -28,7 +28,7 @@ public class Primes {
 
 
         
-        System.out.println("There are " + primeCounter+ " primes between 2 and " + n +" ("+ (int)(100.0/((double)n/(double)primeCounter)) +"%" +" are primes"+ ")");
+        System.out.println("There are " + primeCounter+ " primes between 2 and " + n +" ("+ (int)(100.0/((double)n/(double)primeCounter)) +"%" +" are primes"+ ") ");
     }
 }
     
