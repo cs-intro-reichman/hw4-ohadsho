@@ -5,6 +5,7 @@ public class ArrCharOps {
         String str = "clearly";
         char[] arr1 = {'c','l','e','a','r','l','y'};
         char[] arr2 = {'U','n','d','e','r','s','t', 'o', 'o', 'd'};
+        char[] arr3 =  {'h','a','m','b','u','r','g', 'e', 'r'};
         System.out.println(str);  // Prints the string
         println(arr1);            // Prints an array of characters
         System.out.println(charAt(arr1,2));      
@@ -22,6 +23,7 @@ public class ArrCharOps {
         System.out.println(compareTo("Zoo", "zoo"));
         System.out.println(hashCode(arr1));
         System.out.println(hashCode(arr2));
+        System.out.println(subArray(arr3,4,8));
     }
 
     /** Prints the given array of characters, and moves the cursor to the next line.
@@ -113,9 +115,9 @@ public class ArrCharOps {
     public static char[] subArray(char[] arr, int beginIndex, int endIndex) {
         char[] arrNew = new char[endIndex - beginIndex];
         for(int i=0 ; i<endIndex - beginIndex ; i++){
-            arrNew[i] = arr[beginIndex+1];
+            arrNew[i] = arr[beginIndex+i];
         }
-        return arr;
+        return arrNew;
     }
 
 
