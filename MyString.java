@@ -7,7 +7,7 @@ public class MyString {
       //  System.out.println("lowercase : " + lowerCase("lowercase"));
 
         System.out.println("Testing contains:");
-        System.out.println(contains("unhaphappy", "happy")); // true
+        System.out.println(contains("unhphappy", "ha")); // true
         System.out.println(contains("happy", "unhappy")); // false
         System.out.println(contains("historical", "story")); // false
        System.out.println(contains("psychology", "psycho")); // true
@@ -47,7 +47,7 @@ public class MyString {
                 return true;
                 }
                 else{
-                    i = i-saveJ+1;
+                    i = i-saveJ-1;
                 }
             }
             }
