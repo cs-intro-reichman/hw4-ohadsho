@@ -7,11 +7,11 @@ public class MyString {
       //  System.out.println("lowercase : " + lowerCase("lowercase"));
 
         System.out.println("Testing contains:");
-        System.out.println(contains("unhphappy", "ha")); // true
-        System.out.println(contains("happy", "unhappy")); // false
-        System.out.println(contains("historical", "story")); // false
-       System.out.println(contains("psychology", "psycho")); // true
-        System.out.println(contains("personality", "son")); // true
+       System.out.println(contains("unhphappy", "appy")); // true
+       System.out.println(contains("happy", "unhappy")); // false
+       System.out.println(contains("historical", "story")); // false
+      System.out.println(contains("psychology", "psycho")); // true
+       System.out.println(contains("personality", "son")); // true
         System.out.println(contains("personality", "dad")); // false
         System.out.println(contains("resignation", "sign")); // true
     }
@@ -29,7 +29,10 @@ public class MyString {
 
     /** If str1 contains str2, returns true; otherwise returns false. */
     public static boolean contains(String str1, String str2) {
-        if(str2.length()>str1.length() || str2.length() ==0 || str1.length() ==0)
+        if(str2.length() ==0)
+        return true;
+
+        if(str2.length()>str1.length() ||str1 == null || str2 == null)
         return false;
 
         int saveJ=0;
